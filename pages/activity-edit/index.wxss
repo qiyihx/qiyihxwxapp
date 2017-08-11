@@ -1,0 +1,18 @@
+.container{
+    width: 100%;
+    background-color: #f0eff5;
+}
+
+.con_cls{
+    margin-top: 30rpx;
+    line-height: 30rpx;
+    width: 100%;
+    background-color: #fff;
+    border-style: solid;
+    border-color: #f0eff5;
+    border-width: 1rpx;
+}
+
+.content{
+    margin: 30rpx;
+}

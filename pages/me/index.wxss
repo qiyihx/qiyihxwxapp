@@ -1,0 +1,117 @@
+
+.container{
+    width: 100%;
+    background-color: #f0eff5;
+}
+
+.mine{
+    margin-top: 15rpx;
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    border-style: solid;
+    border-color: #f0eff5;
+    border-width: 1rpx;
+}
+
+.line_cls{
+    width: 100%; 
+    height: 100rpx;
+    line-height: 100rpx;
+    position: relative;
+}
+
+.line{
+    height: 2rpx;
+    background-color: #f0eff5;
+    position: relative;
+    margin-left: 30rpx;
+}
+
+.line_head_cls{
+    width: 100%; 
+    height: 150rpx;
+    line-height: 150rpx;
+    position: relative;
+}
+
+.line_key_cls{
+    position: absolute;
+    left: 30rpx;
+    font-weight:400;
+}
+
+.line_val_cls{
+    position: absolute;
+    right: 60rpx;
+    color: #b4b4b4;
+}
+
+.line_val2_cls{
+    position: absolute;
+    right: 30rpx;
+    color: #b4b4b4;
+}
+
+.right_icon_cls{ 
+    position: absolute;
+    right: 15rpx;
+    top: 5rpx;
+}
+
+.right_icon_img{ 
+    height: 24rpx;
+    width: 18rpx;
+}
+
+.wx-head-img{
+    width: 120rpx;
+    height: 120rpx; 
+    border-radius: 5%;
+    margin-top: 10rpx;
+}
+
+.nickName{ 
+    width: 100%;
+    position: outside;
+    font-style: italic;
+    text-align: center;
+}
+
+.addcontact{
+    margin-top: 20rpx;
+    font-size: 32rpx;
+    color: #fff;
+    background-color: #1aad19;
+}
+.editcontact{
+    margin-top: 20rpx;
+    font-size: 32rpx;
+    color: #fff;
+    background-color: #1aad19;
+}
+
+.call{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 100rpx;
+}
+
+.callme{
+    width: 150rpx;
+    height: 150rpx; 
+}
+
+.wxappcode{
+    margin-top: 30rpx;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+}
+
+.wxappcode-img{
+    margin-top: 30rpx;
+    width: 300rpx;
+    height: 300rpx;
+}

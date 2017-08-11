@@ -1,0 +1,158 @@
+.container{
+    width: 100%;
+    background-color: #F2f2f2;
+    text-align: center;
+}
+
+.menu{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.background_img{
+  width: 100%;
+  background: #eee;
+  height: 480rpx;
+  position: relative;
+
+}
+
+
+.showtitle{
+  position: absolute;
+  left: 20rpx;
+  top: 15rpx;
+  color: #000000;
+}
+
+.qiyihx{
+  font-size: 18px;
+  font-weight:bold;
+}
+
+.welcome{
+  font-size: 10px;
+  padding-left: 15rpx;
+}
+
+.clarity_bar{
+  width: 100%;
+  background: #000000;
+  position: absolute;
+  bottom:0;
+  opacity:0.5;
+  height: 80rpx;
+}
+
+
+.head_img{
+    width: 120rpx;
+    height: 120rpx;
+    left: 30rpx;
+    position: absolute;
+    bottom: 20rpx; 
+    z-index: 9;
+    border:1px solid #fff;
+}
+
+.nickname{
+    left: 180rpx;
+    float: right;
+    color: #fff;
+    position: absolute;
+    bottom: 15rpx;
+   
+}
+
+.slicing{
+  position: absolute;
+  right: 50rpx;
+  color: #fff;
+  bottom: 15rpx;
+  font-size: 24px;
+  z-index: 9;
+  font-weight: unset;
+}
+
+.addline{
+  width: 100%;
+  height: 3rpx;
+  position: relative;
+  padding-bottom: 30rpx;
+}
+
+.settools{
+  height: 24rpx;
+  width: 18rpx;
+  float: right;
+  position: absolute;
+  right: 18rpx;
+  z-index: 9;
+  bottom: 24rpx;
+}
+
+.tag_cls{
+  width: 100%;
+  position: relative;
+  height: 80rpx;
+}
+
+.title_text{
+  position: absolute;
+  font: 18px;
+  left: 20rpx;
+  bottom: 18rpx;
+}
+
+.ideas_cls{
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.content_cls{
+  margin:0 auto;
+  width: 90%; 
+  height: 400rpx;
+  text-align: center;
+  position: relative;
+  z-index: auto;
+}
+
+.idea_img{
+  width: 100%;
+  height: 340rpx;
+}
+
+.content_text{
+  position: absolute;
+  height: auto;
+}
+
+.bar_t{
+  width: 100;
+  height: 30rpx;
+}
+
+.idea_title{
+  position: absolute;
+  left: 30rpx;
+  bottom: 15rpx;
+  color: #000;
+  z-index: 10;
+
+}
+
+.ideas_bar{
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  bottom:0;
+  height: 80rpx;
+}
+
+
+.top-image{
+  width: 100%;
+}

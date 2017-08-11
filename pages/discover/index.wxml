@@ -1,0 +1,39 @@
+<view class="container">
+   
+    <view class="background_img" data-id="{{backgroundImg.id}}" bindtap="changebackground">
+        <image class="top-image" src="{{backgroundImg.picurl}}"></image>
+        <view class="showtitle">
+          <text class="qiyihx">奇异幻想</text>
+          <text class="welcome">今生只为你一人</text>
+        </view>
+        <image class="head_img" src="{{userInfo.avatarUrl}}"></image> 
+        <view class="clarity_bar">
+            <label class="nickname">{{userInfo.nickName}}</label>
+            <view class="slicing"></view> 
+            <image bindtap="settools" class="settools" src="../../images/settools.png"></image>
+        </view>
+    </view>
+
+    <view class="tag_cls">
+      <text class="title_text">热门推荐</text>
+    </view>
+
+    <view class="addline">
+      <image class="addline" src="../../images/addr-line.png"></image>
+    </view>
+
+    <view class="ideas_cls">
+      <block wx:for="{{ideas}}">
+        <view class="content_cls" data-url="{{item.url}}" bindtap="redirpage">
+          <image class="idea_img" src="{{item.picurl}}"></image> 
+          <view class="ideas_bar">
+              <label class="idea_title">{{item.name}}</label>
+              <view class="slicing"></view> 
+              <image class="settools" src="../../images/arrow-right.png"></image>
+          </view>
+        </view>
+        <view class="bar_t"></view> 
+      </block>
+   </view>
+
+</view>

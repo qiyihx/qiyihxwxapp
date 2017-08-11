@@ -1,0 +1,181 @@
+.container{
+    width: 100%;
+    background-color: #F2f2f2;
+    text-align: center;
+}
+
+.menu{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.background_img{
+  width: 100%;
+  background: #eee;
+  height: 480rpx;
+  position: relative;
+
+}
+
+
+.showtitle{
+  position: absolute;
+  left: 20rpx;
+  top: 15rpx;
+  color: #000000;
+}
+
+.qiyihx{
+  font-size: 18rpx;
+  font-weight:bold;
+}
+
+.welcome{
+  font-size: 10rpx;
+  padding-left: 15rpx;
+}
+
+.clarity_bar{
+  width: 100%;
+  background: #000000;
+  position: absolute;
+  bottom:0;
+  opacity:0.5;
+  height: 80rpx;
+}
+
+
+.head_img{
+    width: 120rpx;
+    height: 120rpx;
+    left: 30rpx;
+    position: absolute;
+    bottom: 20rpx; 
+    z-index: 9;
+    border:1rpx solid #fff;
+}
+
+.nickname{
+    left: 180rpx;
+    float: right;
+    color: #fff;
+    position: absolute;
+    bottom: 15rpx;
+   
+}
+
+.slicing{
+  position: absolute;
+  right: 60rpx;
+  color: #000;
+  z-index: 9;
+  font-weight: unset;
+  width:30%;
+  text-align:left;
+  line-height:44px;
+  word-break:keep-all;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  overflow:hidden;
+}
+
+.addline{
+  width: 100%;
+  height: 3rpx;
+  position: relative;
+  padding-bottom: 30rpx;
+}
+
+.settools{ 
+  height: 24rpx;
+  width: 18rpx;
+  float: right;
+  position: absolute;
+  right: 18rpx;
+  z-index: 9;
+  top:50%;
+  margin-top:-11rpx;
+
+}
+
+.tag_cls{
+  width: 100%;
+  position: relative;
+  height: 80rpx;
+}
+
+.title_text{
+  position: absolute;
+  left: 20rpx;
+  bottom: 18rpx;
+}
+
+.ideas_cls{
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.content_cls{
+  margin:0 auto;
+  width: 90%; 
+  height: 400rpx;
+  text-align: center;
+  position: relative;
+  z-index: auto;
+}
+
+.idea_img{
+  width: 100%;
+  height: 340rpx;
+}
+
+.content_text{
+  position: absolute;
+  height: auto;
+}
+
+.bar_t{
+  width: 100;
+  height: 30rpx;
+}
+
+.idea_title{
+  position: absolute;
+  left: 30rpx;
+  color: #000;
+  z-index: 10;
+  width:50%;
+  text-align:left;
+  line-height:44px;
+  word-break:keep-all;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  overflow:hidden;
+}
+
+.ideas_bar{
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  bottom:0;
+  height: 80rpx;
+}
+
+
+.top-image{
+  width: 100%;
+}
+
+.distribute{
+  width: 100%;
+  position: fixed;
+  bottom: 0rpx;
+  z-index: 10;
+}
+
+.distribute-hight{
+  width: 100%;
+  height: 80rpx;
+}

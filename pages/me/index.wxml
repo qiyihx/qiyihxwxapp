@@ -1,0 +1,40 @@
+<view class="container">
+
+    <view class="mine">
+        <view class="line_head_cls" bindtap="contact">
+          <text class="line_val_cls">{{userInfo.nickName}}</text>
+          <view class="line_key_cls">
+            <image src="{{userInfo.avatarUrl}}" class="wx-head-img"></image>    
+          </view>
+          <view class="right_icon_cls">
+            <image class="right_icon_img" src="../../images/arrow-right.png"></image>
+          </view>
+        </view>
+    </view>
+
+    <view class="mine">
+        <view class="line"></view>
+        <view class="line_cls" bindtap="scanCode">
+          <text class="line_key_cls">微信扫一扫</text>
+        </view>
+        <view class="line"></view>
+        <view class="line_cls">
+          <text class="line_key_cls">微信运动</text>
+          <text class="line_val2_cls">{{stepList}}</text>
+        </view>
+        <view class="line"></view>
+        <view class="line_cls" bindtap="contact">
+          <text class="line_key_cls">我的私人名片</text>
+          <view class="right_icon_cls">
+            <image class="right_icon_img" src="../../images/arrow-right.png"></image>
+          </view>
+        </view>
+        <view class="line"></view>
+        <view class="line_cls" bindtap="activity">
+          <text class="line_key_cls">我发布的活动</text>
+          <view class="right_icon_cls">
+            <image class="right_icon_img" src="../../images/arrow-right.png"></image>
+          </view>
+        </view>
+    </view>
+</view>

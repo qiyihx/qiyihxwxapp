@@ -1,0 +1,46 @@
+{
+  "pages":[
+    
+    "pages/discover/index",
+    "pages/me/index","pages/activity-list/index",
+    "pages/activity-detail/index",
+    "pages/activity-distribute/index",
+    "pages/activity-edit/index",
+    "pages/business-card/index",
+    "pages/business-card-detail/index",
+    "pages/business-card-edit/index", 
+    "pages/goods-details/index",
+    "pages/shop-cart/index",
+    "pages/to-pay-order/index",
+    "pages/select-address/index",
+    "pages/address-add/index",
+    "pages/order-list/index",
+    "pages/order-details/index",
+    "pages/index/index",
+    "pages/wuliu/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "#63c6f0",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "box-shadow":"0 0 6px 0",
+    "list": [{
+      "pagePath": "pages/discover/index",
+      "iconPath": "images/nav/discover.png",
+      "selectedIconPath": "images/nav/discover-active.png",
+      "text": "发现"
+    },{
+      "pagePath": "pages/me/index",
+      "iconPath": "images/nav/iconfont-user.png",
+      "selectedIconPath": "images/nav/iconfont-user-active.png",
+      "text": "我"
+    }]
+  }
+}

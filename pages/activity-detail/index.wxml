@@ -1,0 +1,43 @@
+<view class="container"> 
+  <form bindsubmit="formSubmit" report-submit="true" style="width:100%" bindreset="formReset">
+    <view class="mine">
+        <view class="line"></view> 
+        <view class="line_cls">
+          <text class="line_key_cls">活动名称</text>
+          <text class="line_val_cls">{{activity.title}}</text>
+        </view>
+        <view class="line"></view> 
+        <view class="line_cls">
+          <text class="line_key_cls">活动内容</text>
+          <text class="line_val_cls">{{activity.detail}}</text>
+        </view>
+        <view class="line_cls">
+          <text class="line_key_cls">活动地点</text>
+          <text class="line_val_cls">{{activity.location}}</text>
+        </view>
+        <view class="line"></view> 
+        <view class="line_cls">
+          <view class="line_key_cls">活动日期</view>
+          <text class="line_val_cls">{{activity.date}} </text>
+        </view>
+        <view class="line"></view> 
+        <view class="line_cls">
+          <view class="line_key_cls">活动时间</view>
+          <text class="line_val_cls">{{activity.time}} </text>
+        </view>
+        <view class="line"></view> 
+         <view class="line_cls">
+          <text class="line_key_cls">发布人</text>
+          <text class="line_val_cls">{{activity.user_name}}</text>
+        </view>     
+    </view>
+
+    <view class="btn-area">
+      <button formType="submit">立即报名</button>
+    </view>
+
+    <view class="wxappcode">
+      <image class="wxappcode-img" src="https://qiyihx.cn/api/wxapp/getWxacodeUnlimit.php?scene={{activity.id}}&page=pages/activity-detail/index"></image>
+    </view>
+  </form>
+</view>

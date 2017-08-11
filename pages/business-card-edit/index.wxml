@@ -1,0 +1,7 @@
+<view class="container">
+   
+  <view class="con_cls">
+       <input type="text" data-id="{{id}}" value="{{val}}" auto-focus class="content" maxlength="64" placeholder="请输入信息" confirm-type="done" bindconfirm="save_info"/> 
+  </view>
+    
+</view>

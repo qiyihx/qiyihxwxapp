@@ -1,0 +1,60 @@
+<view class="container"> 
+  <form bindsubmit="formSubmit" report-submit="true" style="width:100%" bindreset="formReset">
+    <view class="mine">
+        <view class="line"></view> 
+        <view class="line_cls" bindtap="edit_info" data-id="title" data-val="{{title}}" data-valname="活动名称">
+          <text class="line_key_cls">活动名称</text>
+          <text class="line_val_cls">{{title}}</text>
+          <view class="right_icon_cls">
+            <image class="right_icon_img" src="../../images/arrow-right.png"></image>
+          </view>
+        </view>
+        <view class="line"></view> 
+        <view class="line_cls" bindtap="edit_info" data-id="detail" data-val="{{detail}}" data-valname="活动内容">
+          <text class="line_key_cls">活动内容</text>
+          <text class="line_val_cls">{{detail}}</text>
+          <view class="right_icon_cls">
+            <image class="right_icon_img" src="../../images/arrow-right.png"></image>
+          </view>
+        </view>
+        <view class="line_cls" bindtap="edit_info" data-id="location" data-val="{{location}}" data-valname="活动地点">
+          <text class="line_key_cls">活动地点</text>
+          <text class="line_val_cls">{{location}}</text>
+          <view class="right_icon_cls">
+            <image class="right_icon_img" src="../../images/arrow-right.png"></image>
+          </view>
+        </view>
+        <view class="line"></view> 
+        <view class="line_cls">
+          <view class="line_key_cls">活动日期</view>
+          <picker class="line_val_cls" mode="date" value="{{date}}" start="{{date}}" end="2120-09-01" bindchange="bindDateChange">
+            <view>{{date}} </view>
+          </picker>
+          <view class="right_icon_cls">
+            <image class="right_icon_img" src="../../images/arrow-right.png"></image>
+          </view>
+        </view>
+        <view class="line"></view> 
+        <view class="line_cls">
+          <view class="line_key_cls">活动时间</view>
+          <picker class="line_val_cls" mode="time" value="{{time}}" start="00:00" end="23:59" bindchange="bindTimeChange">
+            <view>{{time}}</view>
+          </picker>
+          <view class="right_icon_cls">
+            <image class="right_icon_img" src="../../images/arrow-right.png"></image>
+          </view>
+        </view>
+        <view class="line"></view> 
+         <view class="line_cls" bindtap="edit_info" data-id="userName" data-val="{{userName}}" data-valname="发布人">
+          <text class="line_key_cls">发布人</text>
+          <text class="line_val_cls">{{userName}}</text>
+          <view class="right_icon_cls">
+            <image class="right_icon_img" src="../../images/arrow-right.png"></image>
+          </view>
+        </view>
+    </view>
+    <view class="btn-area">
+      <button formType="submit">我要发布</button>
+    </view>
+  </form>
+</view>

@@ -1,0 +1,22 @@
+<view class="container">
+   
+    <view class="mine">
+        <image src="{{wxappcontact.photo_file_path}}" class="wx-head-img"></image>    
+    </view>
+    <view class="nickName">
+        {{wxappcontact.nick_name}}
+    </view>
+    <view class="business-card">
+       <form report-submit="true" bindreset="formReset">
+        <view class="btn-area">
+            <button class="addcontact" bindtap="addcontact" data-id="{{wxappcontact.id}}">添加到通讯录</button>
+            <button class="editcontact" bindtap="editcontact" >编辑我的通讯录</button>
+        </view>
+      </form>
+    </view>
+   
+    <view class="call">
+      <image bindtap="callme" data-id="{{wxappcontact.mobile_phone_number}}" class="callme" src="/images/call.png"></image>
+    </view>
+
+</view>

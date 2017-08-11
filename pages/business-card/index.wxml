@@ -1,6 +1,6 @@
 <view class="container">
    
-    <view class="mine">
+    <view class="list-box">
         <image src="{{wxappcontact.photo_file_path}}" class="wx-head-img"></image>    
     </view>
     <view class="nickName">

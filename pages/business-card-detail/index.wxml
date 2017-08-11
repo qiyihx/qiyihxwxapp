@@ -1,5 +1,5 @@
 <view class="container"> 
-    <view class="mine">
+    <view class="list-box">
         <view class="line_head_cls">
           <text class="line_key_cls">头像</text>
           <view class="line_val2_cls">
@@ -20,7 +20,7 @@
           </view>
         </view>
     </view>
-    <view class="mine">    
+    <view class="list-box">    
         <view class="line"></view>
          <view class="line_cls" bindtap="edit_info" data-id="we_chat_number" data-val="{{wxappcontact.we_chat_number}}">
           <text class="line_key_cls" >微信号</text>

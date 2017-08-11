@@ -1,6 +1,6 @@
 <view class="container">
 
-    <view class="mine">
+    <view class="list-box">
         <view class="line_head_cls" bindtap="contact">
           <text class="line_val_cls">{{userInfo.nickName}}</text>
           <view class="line_key_cls">
@@ -12,7 +12,7 @@
         </view>
     </view>
 
-    <view class="mine">
+    <view class="list-box">
         <view class="line"></view>
         <view class="line_cls" bindtap="scanCode">
           <text class="line_key_cls">微信扫一扫</text>

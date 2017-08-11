@@ -1,6 +1,6 @@
 <view class="container"> 
   <form bindsubmit="formSubmit" report-submit="true" style="width:100%" bindreset="formReset">
-    <view class="mine">
+    <view class="list-box">
         <view class="line"></view> 
         <view class="line_cls">
           <text class="line_key_cls">活动名称</text>

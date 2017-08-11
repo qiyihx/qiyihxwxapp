@@ -6,13 +6,11 @@
 .con_cls{
     margin-top: 30rpx;
     line-height: 30rpx;
-    width: 100%;
     background-color: #fff;
-    border-style: solid;
-    border-color: #f0eff5;
-    border-width: 1rpx;
+    width: 100%;
+    border-top:2rpx solid #f0eff5;
+    border-bottom:2rpx solid #f0eff5;
 }
-
 .content{
     margin: 30rpx;
 }

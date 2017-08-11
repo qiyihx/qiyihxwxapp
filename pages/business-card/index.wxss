@@ -9,12 +9,6 @@ page{
     background-color: #fff;
 }
 
-.mine{
-    margin-top: 60rpx;
-    width: 100%;
-    text-align: center;
-}
-
 .wx-head-img{
     width: 200rpx;
     height: 200rpx; 

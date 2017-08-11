@@ -7,7 +7,6 @@
 .mine{
     margin-top: 15rpx;
     width: 100%;
-    position: relative;
     background-color: #fff;
     border-style: solid;
     border-color: #f0eff5;

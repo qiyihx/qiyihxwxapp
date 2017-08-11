@@ -8,7 +8,20 @@ Page({
     stepList:"",
     color: "red",
     backgroundImg:{},
-    ideas:[]
+    ideas:[],
+    indicatorDots: true,
+    autoplay: true,
+    interval: 3000,
+    duration: 1000,
+    loadingHidden: false, // loading
+    userInfo: {},
+    swiperCurrent: 0,
+    selectCurrent: 0,
+    categories: [],
+    activeCategoryId: 0,
+    goods: [],
+    scrollTop: "0",
+    loadingMoreHidden: true,
   },
   statusTap:function(e){
      var curType =  e.currentTarget.dataset.index;
@@ -18,19 +31,53 @@ Page({
      });
      this.onShow();
   },
+  tabClick: function (e) {
+    this.setData({
+      activeCategoryId: e.currentTarget.id
+    });
+    this.getGoodsList(this.data.activeCategoryId);
+  },
+  //事件处理函数
+  swiperchange: function (e) {
+    //console.log(e.detail.current)
+    this.setData({
+      swiperCurrent: e.detail.current
+    })
+  },
+  tapBanner: function (e) {
+    if (e.currentTarget.dataset.url) {
+      wx.navigateTo({
+        url: e.currentTarget.dataset.url
+      })
+    }
+  },
+  bindTypeTap: function (e) {
+    this.setData({
+      selectCurrent: e.index
+    })
+  },
+  scroll: function (e) {
+    //  console.log(e) ;
+    var that = this, scrollTop = that.data.scrollTop;
+    that.setData({
+      scrollTop: e.detail.scrollTop
+    })
+    // console.log('e.detail.scrollTop:'+e.detail.scrollTop) ;
+    // console.log('scrollTop:'+scrollTop)
+  },
   onLoad:function(options){
     // 生命周期函数--监听页面加载
     console.log('onLoad')
     var that = this;
     wx.request({
-      url: app.globalData.requestUrl + '/area/random.php',
+      url: app.globalData.requestUrl + '/banner/list.php',
       data: {
         type: '1',
-        status: '1'
+        //status:'1'
       },
       success: function (res) {
         that.setData({
-          backgroundImg: res.data.data
+          banners: res.data.data
         });
       }
     });

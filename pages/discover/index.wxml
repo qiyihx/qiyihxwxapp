@@ -1,17 +1,19 @@
 <view class="container">
    
-    <view class="background_img" data-id="{{backgroundImg.id}}" bindtap="changebackground">
-        <image class="top-image" src="{{backgroundImg.picurl}}"></image>
-        <view class="showtitle">
-          <text class="qiyihx">奇异幻想</text>
-          <text class="welcome">今生只为你一人</text>
-        </view>
-        <image class="head_img" src="{{userInfo.avatarUrl}}"></image> 
-        <view class="clarity_bar">
-            <label class="nickname">{{userInfo.nickName}}</label>
-            <view class="slicing"></view> 
-            <image bindtap="settools" class="settools" src="../../images/settools.png"></image>
-        </view>
+    <view class="swiper-container">
+        <swiper class="swiper_box" 
+                    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperchange">
+            <block wx:for="{{banners}}">
+                <swiper-item>
+                    <image bindtap="tapBanner" data-url="{{item.url}}" src="{{item.picurl}}" class="slide-image" width="750rpx" height="562.5rpx"/>
+                </swiper-item>
+            </block>
+        </swiper>
+        <view class="dots">  
+            <block wx:for="{{banners}}" wx:key="unique">  
+                <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>  
+            </block>  
+        </view>  
     </view>
 
     <view class="tag_cls">

@@ -8,7 +8,18 @@ Page({
     title:"",
     detail:"",
     location:"",
-    userName: "",
+    user_name: "",
+    types: ['旅行', '运动', '会议', '聚会', '晚会','娱乐'],
+    picurls:[
+      'https://qiyihx.cn/upload/images/2017-08-11/15024546269420.png?t=756077309',
+      'https://qiyihx.cn/upload/images/2017-08-11/15024597018301.png?t=2093174528',
+      'https://qiyihx.cn/upload/images/2017-08-11/15024595051628.png?t=1517994899',
+      'https://qiyihx.cn/upload/images/2017-08-11/15024598836609.png?t=485288257',
+      'https://qiyihx.cn/upload/images/2017-08-11/15024600138403.png?t=929853942',
+      'https://qiyihx.cn/upload/images/2017-08-11/15024601782363.png?t=1263531723'
+    ],
+    picurl: 'https://qiyihx.cn/upload/images/2017-08-11/15024546269420.png?t=756077309',
+    type: "0"
   },
   statusTap:function(e){
      var curType =  e.currentTarget.dataset.index;
@@ -25,7 +36,7 @@ Page({
     app.getUserInfo(function (userInfo) {
       //更新数据
       that.setData({
-        userName: userInfo.nickName
+        user_name: userInfo.nickName
       })
     });
   },
@@ -50,8 +61,8 @@ Page({
   
   },
   formSubmit: function(e) {
-    var formId = e.detail.formId;
-    if (!this.data.title || this.data.title.trim() == ''){
+    var data = this.data;
+    if (!data.title || data.title.trim() == ''){
       wx.showModal({
         title: '提示',
         content: '请输入活动名称',
@@ -59,7 +70,7 @@ Page({
       })
       return;
     }
-    if (!this.data.detail || this.data.detail.trim() == '') {
+    if (!data.detail || data.detail.trim() == '') {
       wx.showModal({
         title: '提示',
         content: '请输入活动内容',
@@ -67,7 +78,7 @@ Page({
       })
       return;
     }
-    if (!this.data.location || this.data.location.trim() == '') {
+    if (!data.location || data.location.trim() == '') {
       wx.showModal({
         title: '提示',
         content: '请输入活动地点',
@@ -75,7 +86,7 @@ Page({
       })
       return;
     }
-    if (!this.data.userName || this.data.userName.trim() == '') {
+    if (!data.user_name || data.user_name.trim() == '') {
       wx.showModal({
         title: '提示',
         content: '请输入发布人',
@@ -83,7 +94,9 @@ Page({
       })
       return;
     }
-    app.addActivity(this.data, formId, function(res){
+    data.form_id = e.detail.formId;
+    var shorturl = "/activity/save.php";
+    app.saveData(this.data, shorturl, function(res){
       if (res.data== 0){
           wx.showModal({
             title: '提示',
@@ -116,6 +129,12 @@ Page({
     }
     wx.navigateTo({
       url: "/pages/activity-edit/index?id=" + e.currentTarget.dataset.id + "&val=" + val + "&valname=" + valname
+    })
+  },
+  bindTypeChange: function(e){
+    this.setData({
+      type: e.detail.value+'',
+      picurl: this.data.picurls[e.detail.value]
     })
   }
 })

@@ -1,10 +1,11 @@
 {
   "pages":[
     
-    "pages/discover/index",
-    "pages/me/index","pages/activity-list/index",
+    "pages/me/index",
+    "pages/activity-list/index",
     "pages/activity-detail/index",
     "pages/activity-distribute/index",
+    "pages/discover/index",
     "pages/activity-edit/index",
     "pages/business-card/index",
     "pages/business-card-detail/index",

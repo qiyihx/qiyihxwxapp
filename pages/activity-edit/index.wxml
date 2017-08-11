@@ -1,9 +1,9 @@
 <view class="container">
    
   <view class="con_cls" wx:if="{{id!='detail'}}">
-       <input type="text" data-id="{{id}}" value="{{val}}" auto-focus class="content" maxlength="64" placeholder="请输入{{valname}}" confirm-type="done" bindconfirm="save_info"/>   
+       <input type="text" data-id="{{id}}" value="{{val}}" auto-focus class="content" maxlength="64" placeholder="请输入{{valname}}" confirm-type="done" bindconfirm="save_info" maxlength="64"/>   
   </view>
   <view class="con_cls" wx:if="{{id =='detail'}}">
-       <textarea data-id="{{id}}" value="{{val}}" confirm-type="done" bindconfirm="save_info" auto-height class="content" placeholder="请输入{{valname}}" />
+       <textarea data-id="{{id}}" value="{{val}}" auto-focus confirm-type="done" bindconfirm="save_info" auto-height class="content" placeholder="请输入{{valname}}" maxlength="256"/>
   </view>
 </view>

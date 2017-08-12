@@ -85,6 +85,9 @@ Page({
   },
   formSubmit: function(e) {
     var data = this.data;
+    data.form_id = e.detail.formId;
+    var that = this;
+    var shorturl = "/activity/save.php";
     if (!data.title || data.title.trim() == ''){
       wx.showModal({
         title: '提示',
@@ -120,36 +123,18 @@ Page({
     if (data.id && data.status =='1'){
       wx.showModal({
         title: '提示',
-        content: '更新活动后需要重新审核，确认更新？'
+        content: '更新活动后需要重新审核，确认更新？',
+        success: function (res) {
+          if (res.confirm) {
+            that.savedata(data, shorturl);
+          } else if (res.cancel) {
+            console.log('用户点击取消')
+          }
+        }
       })
       return;
     }
-    data.form_id = e.detail.formId;
-    var shorturl = "/activity/save.php";
-    app.saveData(data, shorturl, function(res){
-      if (res.retcode == 'SUCCESS'){
-        wx.showModal({
-          title: '提示',
-          content: res.retmsg,
-          showCancel: false,
-          success: function (res) {
-            if (res.confirm) {
-              wx.navigateTo({
-                url: '/pages/activity-list/index?from=me'
-              })
-            } else if (res.cancel) {
-              console.log('用户点击取消')
-            }
-          }
-        })
-      }else{
-        wx.showModal({
-          title: '提示',
-          content: res.retmsg,
-          showCancel: false
-        })
-      }
-    });
+    that.savedata(data, shorturl);
   },
   bindDateChange: function (e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)
@@ -181,5 +166,31 @@ Page({
       type: e.detail.value+'',
       picurl: this.data.picurls[e.detail.value]
     })
+  },
+  savedata: function (data, shorturl) {
+    app.saveData(data, shorturl, function (res) {
+      if (res.retcode == 'SUCCESS') {
+        wx.showModal({
+          title: '提示',
+          content: res.retmsg,
+          showCancel: false,
+          success: function (res) {
+            if (res.confirm) {
+              wx.navigateTo({
+                url: '/pages/activity-list/index?from=me'
+              })
+            } else if (res.cancel) {
+              console.log('用户点击取消')
+            }
+          }
+        })
+      } else {
+        wx.showModal({
+          title: '提示',
+          content: res.retmsg,
+          showCancel: false
+        })
+      }
+    });
   }
 })

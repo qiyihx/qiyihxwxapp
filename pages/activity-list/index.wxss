@@ -20,18 +20,6 @@
   padding-bottom: 30rpx;
 }
 
-.tag_cls{
-  width: 100%;
-  position: relative;
-  height: 90rpx;
-}
-
-.title_text{
-  position: absolute;
-  left: 20rpx;
-  bottom: 18rpx;
-}
-
 .ideas_cls{
   width: 100%;
   text-align: center;

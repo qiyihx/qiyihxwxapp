@@ -8,7 +8,7 @@
     <image class="addline" src="../../images/addr-line.png"></image>
   </view>
 
-  <view class="ideas_cls margin-bottom60">
+  <view class="ideas_cls {{from =='me'?'margin-bottom100':''}}">
       <block wx:key="act" wx:for="{{activity}}">
         <view class="content_cls" bindtap="activityDetail" data-url="{{from =='me'?'/pages/activity-distribute/index?id=':'/pages/activity-detail/index?id='}}{{item.id}}">
           <image class="idea_img" src="{{item.picurl}}"></image> 
@@ -26,9 +26,8 @@
       </block>
   </view>
 
-  <view wx:if="{{from =='me'}}" class="distribute" bindtap="distribute">
-    <button>我要发起</button>
+  <view wx:if="{{from =='me'}}" class="footer" bindtap="distribute">
+      <button class="create-cls" formType="submit">{{id?'更新活动':'我要发起'}}</button>
   </view>
-
 
 </view>

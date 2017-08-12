@@ -46,7 +46,7 @@
    text-align: center;
    height: 446rpx;
    position: fixed;
-   bottom: 0rpx;
+   bottom: 100rpx;
 }
 
 .pic-img{

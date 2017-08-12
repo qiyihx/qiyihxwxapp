@@ -21,6 +21,7 @@ Page({
     ],
     picurl: 'https://qiyihx.cn/upload/images/2017-08-11/15024546269420.png?t=756077309',
     type: "0",
+    status:"0",
     user_headimg:""
   },
   statusTap:function(e){
@@ -48,6 +49,7 @@ Page({
           user_name: data.user_name,
           user_headimg: data.user_headimg,
           type: data.type,
+          status:data.status,
           picurl: that.data.picurls[data.type]
         });
       });
@@ -115,9 +117,16 @@ Page({
       })
       return;
     }
+    if (data.id && data.status =='1'){
+      wx.showModal({
+        title: '提示',
+        content: '更新活动后需要重新审核，确认更新？'
+      })
+      return;
+    }
     data.form_id = e.detail.formId;
     var shorturl = "/activity/save.php";
-    app.saveData(this.data, shorturl, function(res){
+    app.saveData(data, shorturl, function(res){
       if (res.retcode == 'SUCCESS'){
         wx.showModal({
           title: '提示',

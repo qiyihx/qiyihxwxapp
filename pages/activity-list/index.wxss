@@ -1,70 +1,3 @@
-.container{
-    width: 100%;
-    background-color: #F2f2f2;
-    text-align: center;
-}
-
-.menu{
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-}
-
-.background_img{
-  width: 100%;
-  background: #eee;
-  height: 480rpx;
-  position: relative;
-
-}
-
-
-.showtitle{
-  position: absolute;
-  left: 20rpx;
-  top: 15rpx;
-  color: #000000;
-}
-
-.qiyihx{
-  font-size: 18rpx;
-  font-weight:bold;
-}
-
-.welcome{
-  font-size: 10rpx;
-  padding-left: 15rpx;
-}
-
-.clarity_bar{
-  width: 100%;
-  background: #000000;
-  position: absolute;
-  bottom:0;
-  opacity:0.5;
-  height: 90rpx;
-}
-
-
-.head_img{
-    width: 120rpx;
-    height: 120rpx;
-    left: 30rpx;
-    position: absolute;
-    bottom: 20rpx; 
-    z-index: 9;
-    border:1rpx solid #fff;
-}
-
-.nickname{
-    left: 180rpx;
-    float: right;
-    color: #fff;
-    position: absolute;
-    bottom: 15rpx;
-   
-}
-
 .slicing{
   position: absolute;
   right: 60rpx;
@@ -122,11 +55,6 @@
 .content_text{
   position: absolute;
   height: auto;
-}
-
-.bar_t{
-  width: 100;
-  height: 30rpx;
 }
 
 .top-image{

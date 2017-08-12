@@ -45,17 +45,27 @@
     color: #fff;
     position: absolute;
     bottom: 15rpx;
-   
+    font-size: 32rpx;
+    width:50%;
+    text-align:left;
+    word-break:keep-all;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
 }
 
 .slicing{
-  position: absolute;
-  right: 50rpx;
-  color: #fff;
-  bottom: 15rpx;
-  font-size: 24rpx;
-  z-index: 9;
-  font-weight: unset;
+    position: absolute;
+    right: 50rpx;
+    color: #fff;
+    bottom: 15rpx;
+    font-size: 24rpx;
+    width:20%;
+    text-align:right;
+    word-break:keep-all;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
 }
 
 .addline{
@@ -101,15 +111,4 @@
     height: 120rpx; 
     border-radius: 5%;
     margin-top: 10rpx;
-}
-
-.join-cls{
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    line-height: 100rpx;
-    background-color: #e64340;
-    color:#fff;
-    font-size: 34rpx;
-    border-radius:0px;
 }

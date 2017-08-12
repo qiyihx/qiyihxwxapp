@@ -55,7 +55,6 @@ swiper-item image {
 
 }
 
-
 .showtitle{
   position: absolute;
   left: 20rpx;
@@ -165,11 +164,6 @@ swiper-item image {
 .content_text{
   position: absolute;
   height: auto;
-}
-
-.bar_t{
-  width: 100;
-  height: 30rpx;
 }
 
 .idea_title{

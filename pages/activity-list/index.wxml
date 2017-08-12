@@ -1,7 +1,7 @@
 <view class="container">
 
   <view class="tag_cls">
-    <text class="title_text">{{from =='me'?'我发布的活动':'热门活动推荐'}}</text>
+    <text class="title_text">{{from =='me'?'我发起的活动':'热门活动推荐'}}</text>
   </view>
 
   <view class="addline">
@@ -10,14 +10,16 @@
 
   <view class="ideas_cls margin-bottom60">
       <block wx:key="act" wx:for="{{activity}}">
-        <view class="content_cls" bindtap="activityDetail" data-id="{{item.id}}">
+        <view class="content_cls" bindtap="activityDetail" data-url="{{from =='me'?'/pages/activity-distribute/index?id=':'/pages/activity-detail/index?id='}}{{item.id}}">
           <image class="idea_img" src="{{item.picurl}}"></image> 
-          <view class="ideas_bar">
-              <label class="idea_title">{{item.title}}</label>
+          <view class="list_box_bar">
+              <label class="title">{{item.title}}</label>
               <view class="slicing" wx:if="{{from =='me'}}">
-                {{item.status == '0'? '发布中':item.status =='1'?'审核通过':'审核失败'}}
+                {{item.status == '0'? '发起中':item.status =='1'?'审核通过':'审核失败'}}
               </view> 
-              <image class="settools" src="../../images/arrow-right.png"></image>
+              <view class="right_icon_30_cls">
+                <image class="right_icon_img" src="../../images/arrow-right.png"></image>
+              </view>
           </view>
         </view>
         <view class="bar_t"></view> 
@@ -25,7 +27,7 @@
   </view>
 
   <view wx:if="{{from =='me'}}" class="distribute" bindtap="distribute">
-    <button>我要发布</button>
+    <button>我要发起</button>
   </view>
 
 

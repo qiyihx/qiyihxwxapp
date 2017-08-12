@@ -27,7 +27,7 @@ Page({
       id = options.id;
     }
     if (id != undefined && id != 'undefined'){
-      app.getDetail(id, 'area', function(res){
+      app.getDetail(id, 'wxapp/contact', function(res){
         that.setData({
           wxappcontact: res.data
         });
@@ -75,7 +75,7 @@ Page({
   },
   addcontact: function(e) {
     var id = e.currentTarget.dataset.id;
-    app.getDetail(id, 'area', function(res){
+    app.getDetail(id, 'wxapp/contact', function(res){
       if (res.data == '' || res.data.mobile_phone_number == '') {
         wx.showModal({
           title: '提示',

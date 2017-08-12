@@ -143,7 +143,7 @@ Page({
     if (e.currentTarget.dataset.id != 0) {
       var that = this;
       wx.request({
-        url: app.globalData.requestUrl + '/area/random.php',
+        url: app.globalData.requestUrl + '/banner/random.php',
         data: {
           type: '1',
           id: e.currentTarget.dataset.id,

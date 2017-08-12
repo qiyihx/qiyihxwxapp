@@ -20,14 +20,14 @@ page{
     align-items: center;
 }
 .order-status .icon-box{
-    width: 80rpx;
-    height: 80rpx;
+    width: 90rpx;
+    height: 90rpx;
     overflow: hidden;
     margin-right: 30rpx;
 }
 .order-status .icon-box .icon{
-    width: 80rpx;
-    height: 80rpx;
+    width: 90rpx;
+    height: 90rpx;
 }
 .order-status .right-text{
     width: 580rpx;

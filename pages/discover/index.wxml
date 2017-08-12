@@ -28,10 +28,12 @@
       <block wx:for="{{ideas}}">
         <view class="content_cls" data-url="{{item.url}}" bindtap="redirpage">
           <image class="idea_img" src="{{item.picurl}}"></image> 
-          <view class="ideas_bar">
-              <label class="idea_title">{{item.name}}</label>
+          <view class="list_box_bar">
+              <label class="title">{{item.name}}</label>
               <view class="slicing"></view> 
-              <image class="settools" src="../../images/arrow-right.png"></image>
+              <view class="right_icon_30_cls">
+                <image class="right_icon_img" src="../../images/arrow-right.png"></image>
+              </view>
           </view>
         </view>
         <view class="bar_t"></view> 

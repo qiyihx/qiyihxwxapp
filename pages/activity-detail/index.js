@@ -9,6 +9,7 @@ Page({
     activity_id:"",
     user_name:"",
     form_id:"",
+    user_headimg:""
   },
   statusTap:function(e){
      var curType =  e.currentTarget.dataset.index;
@@ -34,6 +35,7 @@ Page({
         app.getUserInfo(function (userInfo) {
           //更新数据
           that.joindata.user_name = userInfo.nickName;
+          that.joindata.user_headimg = userInfo.avatarUrl;
         });
       });
     }

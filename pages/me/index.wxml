@@ -6,7 +6,7 @@
           <view class="line_key_cls">
             <image src="{{userInfo.avatarUrl}}" class="wx-head-img"></image>    
           </view>
-          <view class="right_icon_cls">
+          <view class="right_icon_30_cls">
             <image class="right_icon_img" src="../../images/arrow-right.png"></image>
           </view>
         </view>
@@ -25,14 +25,14 @@
         <view class="line"></view>
         <view class="line_cls" bindtap="contact">
           <text class="line_key_cls">我的私人名片</text>
-          <view class="right_icon_cls">
+          <view class="right_icon_30_cls">
             <image class="right_icon_img" src="../../images/arrow-right.png"></image>
           </view>
         </view>
         <view class="line"></view>
         <view class="line_cls" bindtap="activity">
-          <text class="line_key_cls">我发布的活动</text>
-          <view class="right_icon_cls">
+          <text class="line_key_cls">我发起的活动</text>
+          <view class="right_icon_30_cls">
             <image class="right_icon_img" src="../../images/arrow-right.png"></image>
           </view>
         </view>

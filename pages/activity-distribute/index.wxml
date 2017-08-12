@@ -5,7 +5,7 @@
         <view class="line_cls" bindtap="edit_info" data-id="title" data-val="{{title}}" data-valname="活动名称">
           <text class="line_key_cls">活动名称</text>
           <text class="line_val_cls">{{title}}</text>
-          <view class="right_icon_cls">
+          <view class="right_icon_30_cls">
             <image class="right_icon_img" src="../../images/arrow-right.png"></image>
           </view>
         </view>
@@ -13,7 +13,7 @@
         <view class="line_cls" bindtap="edit_info" data-id="detail" data-val="{{detail}}" data-valname="活动内容">
           <text class="line_key_cls">活动内容</text>
           <text class="line_val_cls">{{detail}}</text>
-          <view class="right_icon_cls">
+          <view class="right_icon_30_cls">
             <image class="right_icon_img" src="../../images/arrow-right.png"></image>
           </view>
         </view>
@@ -21,7 +21,7 @@
         <view class="line_cls" bindtap="edit_info" data-id="location" data-val="{{location}}" data-valname="活动地点">
           <text class="line_key_cls">活动地点</text>
           <text class="line_val_cls">{{location}}</text>
-          <view class="right_icon_cls">
+          <view class="right_icon_30_cls">
             <image class="right_icon_img" src="../../images/arrow-right.png"></image>
           </view>
         </view>
@@ -30,7 +30,7 @@
           <view class="line_key_cls">活动类型</view>
           <picker class="line_val15_cls" bindchange="bindTypeChange" value="{{index}}" range="{{types}}">
             <view class="picker">{{types[type]}}</view>
-            <view class="right_icon2_cls">
+            <view class="right_icon_picker_cls">
                 <image class="right_icon_img" src="../../images/arrow-right.png"></image>
             </view>
           </picker>   
@@ -40,7 +40,7 @@
           <view class="line_key_cls">活动日期</view>
           <picker class="line_val15_cls" mode="date" value="{{date}}" start="{{date}}" end="2120-09-01" bindchange="bindDateChange">
             <view class="picker">{{date}} </view>
-            <view class="right_icon2_cls">
+            <view class="right_icon_picker_cls">
                 <image class="right_icon_img" src="../../images/arrow-right.png"></image>
             </view>
           </picker>
@@ -50,22 +50,22 @@
           <view class="line_key_cls">活动时间</view>
           <picker class="line_val15_cls" mode="time" value="{{time}}" start="00:00" end="23:59" bindchange="bindTimeChange">
             <view class="picker">{{time}}</view>
-            <view class="right_icon2_cls">
+            <view class="right_icon_picker_cls">
                 <image class="right_icon_img" src="../../images/arrow-right.png"></image>
             </view>
           </picker>
         </view>
         <view class="line"></view> 
-         <view class="line_cls" bindtap="edit_info" data-id="user_name" data-val="{{user_name}}" data-valname="发布人">
-          <text class="line_key_cls">发布人</text>
+         <view class="line_cls" bindtap="edit_info" data-id="user_name" data-val="{{user_name}}" data-valname="发起人">
+          <text class="line_key_cls">发起人</text>
           <text class="line_val_cls">{{user_name}}</text>
-          <view class="right_icon_cls">
+          <view class="right_icon_30_cls">
             <image class="right_icon_img" src="../../images/arrow-right.png"></image>
           </view>
         </view>
     </view>
     <view class="btn-area">
-      <button formType="submit">我要发布</button>
+      <button formType="submit">{{id?'更新活动':'我要发起'}}</button>
     </view>
     <view class="pic-cls">
         <image class="pic-img" src="{{picurl}}"></image>

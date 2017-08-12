@@ -10,6 +10,71 @@
     margin-left: 30rpx;
 }
 
+
+.background_img{
+  width: 100%;
+  background: #eee;
+  height: 480rpx;
+  position: relative;
+
+}
+
+.clarity_bar{
+  width: 100%;
+  background: #000000;
+  position: absolute;
+  bottom:0;
+  opacity:0.5;
+  height: 90rpx;
+}
+
+
+.head_img{
+    width: 120rpx;
+    height: 120rpx;
+    left: 30rpx;
+    position: absolute;
+    bottom: 20rpx; 
+    z-index: 9;
+    border:1px solid #fff;
+}
+
+.title_cls{
+    left: 180rpx;
+    float: right;
+    color: #fff;
+    position: absolute;
+    bottom: 15rpx;
+   
+}
+
+.slicing{
+  position: absolute;
+  right: 50rpx;
+  color: #fff;
+  bottom: 15rpx;
+  font-size: 24rpx;
+  z-index: 9;
+  font-weight: unset;
+}
+
+.addline{
+  width: 100%;
+  height: 3rpx;
+  position: relative;
+  padding-bottom: 30rpx;
+}
+
+.settools{
+    height: 24rpx;
+    width: 18rpx;
+    float: right;
+    position: absolute;
+    right: 18rpx;
+    z-index: 9;
+    bottom: 24rpx;
+}
+
 .line_head_cls{
     width: 100%; 
     height: 150rpx;
@@ -23,27 +88,12 @@
     font-weight:400;
 }
 
-.line_val_cls{
-    position: absolute;
-    right: 60rpx;
+.line_content{
     color: #b4b4b4;
-}
-
-.line_val2_cls{
-    position: absolute;
-    right: 30rpx;
-    color: #b4b4b4;
-}
-
-.right_icon_cls{ 
-    position: absolute;
-    right: 15rpx;
-    top: 5rpx;
-}
-
-.right_icon_img{ 
-    height: 30rpx;
-    width: 30rpx;
+    margin-left: 30rpx;
+    margin-right: 15rpx;
+    padding-bottom: 10rpx;
+    word-wrap:break-word;
 }
 
 .wx-head-img{
@@ -53,46 +103,13 @@
     margin-top: 10rpx;
 }
 
-.nickName{ 
-    width: 100%;
-    position: outside;
-    font-style: italic;
+.join-cls{
     text-align: center;
-}
-
-.addcontact{
-    margin-top: 20rpx;
-    font-size: 32rpx;
-    color: #fff;
-    background-color: #1aad19;
-}
-.editcontact{
-    margin-top: 20rpx;
-    font-size: 32rpx;
-    color: #fff;
-    background-color: #1aad19;
-}
-
-.call{
+    height: 100%;
     width: 100%;
-    text-align: center;
-    position: absolute;
-    bottom: 100rpx;
-}
-
-.callme{
-    width: 150rpx;
-    height: 150rpx; 
-}
-
-.wxappcode{
-    width: 100%;
-    text-align: center;
-    background-color: #fff;
-}
-
-.wxappcode-img{
-    margin-top: 50rpx;
-    width: 300rpx;
-    height: 300rpx;
+    line-height: 100rpx;
+    background-color: #e64340;
+    color:#fff;
+    font-size: 34rpx;
+    border-radius:0px;
 }

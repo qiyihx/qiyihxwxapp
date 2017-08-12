@@ -15,7 +15,7 @@
         <view class="line_cls" bindtap="edit_info" data-id="first_name" data-val="{{wxappcontact.first_name}}">
           <text class="line_key_cls" >姓名</text>
           <text class="line_val_cls">{{wxappcontact.first_name}}</text>
-          <view class="right_icon_cls">
+          <view class="right_icon_30_cls">
             <image class="right_icon_img" src="../../images/arrow-right.png"></image>
           </view>
         </view>
@@ -25,7 +25,7 @@
          <view class="line_cls" bindtap="edit_info" data-id="we_chat_number" data-val="{{wxappcontact.we_chat_number}}">
           <text class="line_key_cls" >微信号</text>
           <text class="line_val_cls">{{wxappcontact.we_chat_number}}</text>
-          <view class="right_icon_cls">
+          <view class="right_icon_30_cls">
             <image class="right_icon_img" src="../../images/arrow-right.png"></image>
           </view>
         </view>
@@ -33,7 +33,7 @@
         <view class="line_cls" bindtap="edit_info" data-id="mobile_phone_number" data-val="{{wxappcontact.mobile_phone_number}}">
           <text class="line_key_cls">手机号</text>
           <text class="line_val_cls">{{wxappcontact.mobile_phone_number}}</text>
-          <view class="right_icon_cls">
+          <view class="right_icon_30_cls">
             <image class="right_icon_img" src="../../images/arrow-right.png"></image>
           </view>
         </view>
@@ -41,7 +41,7 @@
         <view class="line_cls" bindtap="edit_info" data-id="email" data-val="{{wxappcontact.email}}">
           <text class="line_key_cls">邮箱</text>
           <text class="line_val_cls">{{wxappcontact.email}}</text>
-          <view class="right_icon_cls">
+          <view class="right_icon_30_cls">
             <image class="right_icon_img" src="../../images/arrow-right.png"></image>
           </view>
         </view>
@@ -49,7 +49,7 @@
         <view class="line_cls" bindtap="edit_info" data-id="organization" data-val="{{wxappcontact.organization}}">
           <text class="line_key_cls">公司</text>
           <text class="line_val_cls">{{wxappcontact.organization}}</text>
-          <view class="right_icon_cls">
+          <view class="right_icon_30_cls">
             <image class="right_icon_img" src="../../images/arrow-right.png"></image>
           </view>
         </view>
@@ -57,7 +57,7 @@
         <view class="line_cls" bindtap="edit_info" data-id="title" data-val="{{wxappcontact.title}}">
           <text class="line_key_cls">职位</text>
           <text class="line_val_cls">{{wxappcontact.title}}</text>
-          <view class="right_icon_cls">
+          <view class="right_icon_30_cls">
             <image class="right_icon_img" src="../../images/arrow-right.png"></image>
           </view>
         </view>

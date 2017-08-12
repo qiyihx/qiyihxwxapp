@@ -74,7 +74,7 @@ Page({
     })
     */
     wx.request({
-      url: app.globalData.requestUrl + '/area/list.php',
+      url: app.globalData.requestUrl + '/banner/list.php',
       data: {
         type: '1'
       },

@@ -36,17 +36,6 @@
     color: #b4b4b4;
 }
 
-.right_icon_cls{ 
-    position: absolute;
-    right: 15rpx;
-    top: 5rpx;
-}
-
-.right_icon_img{ 
-    height: 24rpx;
-    width: 18rpx;
-}
-
 .wx-head-img{
     width: 120rpx;
     height: 120rpx; 

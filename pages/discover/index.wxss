@@ -79,7 +79,7 @@ swiper-item image {
   position: absolute;
   bottom:0;
   opacity:0.5;
-  height: 80rpx;
+  height: 90rpx;
 }
 
 
@@ -132,7 +132,7 @@ swiper-item image {
 .tag_cls{
   width: 100%;
   position: relative;
-  height: 80rpx;
+  height: 90rpx;
 }
 
 .title_text{
@@ -180,15 +180,6 @@ swiper-item image {
   z-index: 10;
 
 }
-
-.ideas_bar{
-  width: 100%;
-  background: #fff;
-  position: absolute;
-  bottom:0;
-  height: 80rpx;
-}
-
 
 .top-image{
   width: 100%;

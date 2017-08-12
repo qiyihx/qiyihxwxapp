@@ -1,13 +1,8 @@
-var wxpay = require('../../utils/pay.js')
 var app = getApp()
 Page({
   data:{
     userInfo: {},
     currentTpye:0,
-    tabClass: ["", "", "", "", ""],
-    stepList:"",
-    color: "red",
-    backgroundImg:{},
     activity:[]
   },
   statusTap:function(e){
@@ -25,7 +20,6 @@ Page({
     });
     var code = "";
     if (options.from == 'me'){
-      console.log('from me');
       wx.login({
         success: function (res) {
           code = res.code;
@@ -35,7 +29,6 @@ Page({
               code: code
             },
             success: function (res) {
-              console.log(res.data.data);
               that.setData({
                 activity: res.data.data
               });
@@ -50,7 +43,6 @@ Page({
           status: '1'
         },
         success: function (res) {
-          console.log(res.data.data);
           that.setData({
             activity: res.data.data
           });
@@ -88,7 +80,7 @@ Page({
   },
   activityDetail: function(e){
     wx.navigateTo({
-      url: "/pages/activity-detail/index?id=" + e.currentTarget.dataset.id
+      url: e.currentTarget.dataset.url
     })
   }, 
   onShareAppMessage: function (res) {

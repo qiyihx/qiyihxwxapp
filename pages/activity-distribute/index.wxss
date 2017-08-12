@@ -23,11 +23,6 @@
     font-weight:400;
 }
 
-.line_val_cls{
-    position: absolute;
-    right: 60rpx;
-    color: #b4b4b4;
-}
 
 .line_val2_cls{
     position: absolute;
@@ -37,30 +32,13 @@
 
 .line_val15_cls{
     position: absolute;
-    right: 15rpx;
+    right: 30rpx;
     color: #b4b4b4;
-}
-
-.right_icon_cls{ 
-    position: absolute;
-    right: 15rpx;
-    top: 5rpx;
-}
-
-.right_icon2_cls{
-    position: absolute;
-    right: 0rpx;
-    top: 5rpx
 }
 
 .picker{
-    padding-right: 45rpx;
+    padding-right: 30rpx;
     color: #b4b4b4;
-}
-
-.right_icon_img{ 
-    height: 30rpx;
-    width: 30rpx;
 }
 
 .pic-cls{

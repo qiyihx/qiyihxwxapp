@@ -148,7 +148,7 @@ App({
       success: function (res) {
         var code = res.code; // 微信登录接口返回的 code 参数，下面注册接口需要用到
         wx.request({
-          url: that.globalData.requestUrl+'/area/save.php',
+          url: that.globalData.requestUrl+'/wxapp/contact/save.php',
           data: {
             code: code,
             key: key,
@@ -169,7 +169,7 @@ App({
       success: function (res) {
         var code = res.code; // 微信登录接口返回的 code 参数，下面注册接口需要用到
         wx.request({
-          url: that.globalData.requestUrl+ '/area/detailByCode.php',
+          url: that.globalData.requestUrl+ '/wxapp/contact/detailByCode.php',
           data: {
             code: code
           },

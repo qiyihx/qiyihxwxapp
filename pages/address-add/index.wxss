@@ -44,8 +44,8 @@ page{
 .save-btn,
 .cancel-btn{
     width: 690rpx;
-    height: 80rpx;
-    line-height: 80rpx;
+    height: 90rpx;
+    line-height: 90rpx;
     text-align: center;
     margin-top:30rpx; 
     border-radius: 6rpx;

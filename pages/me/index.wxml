@@ -29,12 +29,12 @@
             <image class="right_icon_img" src="../../images/arrow-right.png"></image>
           </view>
         </view>
-        <view class="line"></view>
+     <!--   <view class="line"></view>
         <view class="line_cls" bindtap="activity">
           <text class="line_key_cls">我发起的活动</text>
           <view class="right_icon_30_cls">
             <image class="right_icon_img" src="../../images/arrow-right.png"></image>
           </view>
-        </view>
+        </view>-->
     </view>
 </view>

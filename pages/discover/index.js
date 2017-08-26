@@ -73,7 +73,7 @@ Page({
       url: app.globalData.requestUrl + '/banner/list.php',
       data: {
         type: '1',
-        //status:'1'
+        status:'1'
       },
       success: function (res) {
         that.setData({
@@ -85,7 +85,7 @@ Page({
       url: app.globalData.requestUrl + '/banner/list.php',
       data: {
         type: '1',
-      //  status: '1'
+        status: '1'
       },
       success: function (res) {
         that.setData({

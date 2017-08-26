@@ -15,10 +15,8 @@ Page({
     activeCategoryId: 0,
     goods:[],
     scrollTop:"0",
-    loadingMoreHidden:true,
-    requestUrl: "https://wxapi.hotapp.cn/proxy/?appkey=hotapp2427615&url=URL"
+    loadingMoreHidden:true
   },
-
   tabClick: function (e) {
     this.setData({
       activeCategoryId: e.currentTarget.id

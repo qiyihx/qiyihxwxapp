@@ -1,6 +1,6 @@
 {
   "pages":[
-    
+    "pages/life/index",
     "pages/discover/index",
     "pages/activity-list/index",
     "pages/activity-detail/index",
